@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanPet | Entrar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-intro">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark">U</span> UrbanPet</a>
+      <div>
+        <span class="eyebrow">Cuidado que aproxima</span>
+        <h1>A saúde do seu pet começa com um agendamento.</h1>
+        <p>Encontre veterinários autônomos e organize as consultas do seu melhor amigo em um só lugar.</p>
+      </div>
+      <p class="intro-foot">Conectando tutores e profissionais veterinários.</p>
+    </section>
+
+    <section class="login-panel">
+      <div class="form-wrap">
+        <span class="eyebrow">Bem-vindo(a)</span>
+        <h2>Entrar na sua conta</h2>
+        <p class="muted">Acesse como tutor ou veterinário autônomo.</p>
+
+        <form id="loginForm" novalidate>
+          <label for="perfil">Tipo de acesso</label>
+          <select id="perfil" required>
+            <option value="">Selecione seu perfil</option>
+            <option value="tutor">Usuário comum (tutor)</option>
+            <option value="veterinario">Veterinário autônomo</option>
+          </select>
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="voce@email.com" autocomplete="email" required>
+
+          <label for="senha">Senha</label>
+          <input id="senha" type="password" placeholder="Digite sua senha" required minlength="4">
+
+          <p class="form-message" id="loginMessage" aria-live="polite"></p>
+          <button class="button button-primary button-full" type="submit">Entrar</button>
+        </form>
+        <div class="demo-note">
+          <strong>Protótipo demonstrativo</strong>
+          <span>Não é necessário criar uma conta real. Preencha os campos para acessar a demonstração.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

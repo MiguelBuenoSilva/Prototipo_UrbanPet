@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanPet | Consultas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="lista.html"><span class="brand-mark">U</span> UrbanPet</a>
+    <nav class="top-nav">
+      <span class="profile-chip" id="profileLabel">Minha área</span>
+      <button class="button button-outline button-small" id="logoutButton" type="button">Sair</button>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-heading">
+      <div>
+        <span class="eyebrow">Painel UrbanPet</span>
+        <h1 id="listTitle">Minhas consultas</h1>
+        <p class="muted" id="listSubtitle">Acompanhe seus agendamentos.</p>
+      </div>
+      <a class="button button-primary" id="newAppointmentLink" href="cadastro.html">+ Agendar consulta</a>
+    </section>
+
+    <section class="summary-grid" id="summaryGrid">
+      <article class="summary-card"><span class="summary-icon">▣</span><div><strong id="totalCount">0</strong><span>Consultas cadastradas</span></div></article>
+      <article class="summary-card"><span class="summary-icon">◷</span><div><strong id="nextCount">0</strong><span>Próximas consultas</span></div></article>
+      <article class="summary-card"><span class="summary-icon">♡</span><div><strong id="professionalCount">0</strong><span id="thirdLabel">Veterinários disponíveis</span></div></article>
+    </section>
+
+    <section class="content-card">
+      <div class="section-heading">
+        <div><h2 id="tableHeading">Seus agendamentos</h2><p class="muted" id="tableDescription">As consultas salvas neste navegador aparecem aqui.</p></div>
+        <span class="count-pill" id="listCount">0 registros</span>
+      </div>
+      <div id="appointmentList" class="appointment-list"></div>
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">🐾</div>
+        <h3>Nenhuma consulta por enquanto</h3>
+        <p>Quando houver um agendamento, ele aparecerá nesta área.</p>
+        <a class="button button-primary" id="emptyAction" href="cadastro.html">Agendar primeira consulta</a>
+      </div>
+    </section>
+
+    <section class="content-card professionals-card" id="professionalsCard">
+      <div class="section-heading"><div><h2>Veterinários autônomos</h2><p class="muted">Profissionais disponíveis para agendamento no protótipo.</p></div></div>
+      <div class="professional-grid">
+        <article class="professional"><div class="avatar">👩‍⚕️</div><div><strong>Dra. Ana Costa</strong><span>Clínica geral</span></div><span class="available">Disponível</span></article>
+        <article class="professional"><div class="avatar">👨‍⚕️</div><div><strong>Dr. Lucas Mendes</strong><span>Dermatologia veterinária</span></div><span class="available">Disponível</span></article>
+        <article class="professional"><div class="avatar">👩‍⚕️</div><div><strong>Dra. Beatriz Lima</strong><span> vacinação e prevenção</span></div><span class="available">Disponível</span></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">UrbanPet · Protótipo acadêmico</footer>
+</body>
+</html>
